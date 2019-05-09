@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'quiz',
     'community',
+    'register',
+    'mocktest',
 ]
 
 MIDDLEWARE = [
