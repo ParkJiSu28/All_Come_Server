@@ -2,12 +2,12 @@ from django.db import models
 
 
 class User(models.Model):
-    id = models.IntegerField(primary_key=True)
-    email = models.TextField()
-    algorithme = models.IntegerField()
-    database = models.IntegerField()
-    computer_network = models.IntegerField()
-    computer_structure = models.IntegerField()
-    data_structure = models.IntegerField()
-    operation_system = models.IntegerField()
-    software_engineering = models.IntegerField()
+    email = models.CharField(max_length=100,unique=True,null=False)
+    algorithme = models.IntegerField(default='1')
+    database = models.IntegerField(default='1')
+    computer_network = models.IntegerField(default='1')
+    computer_structure = models.IntegerField(default='1')
+    data_structure = models.IntegerField(default='1')
+    operation_system = models.IntegerField(default='1')
+    software_engineering = models.IntegerField(default='1')
+
