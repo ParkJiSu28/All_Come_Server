@@ -1,10 +1,13 @@
-from django.urls import path, include,re_path
+from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from .views import QuizViewSet,QuizRequestAPIView
+from .views import QuizViewSet, QuizRequestViewSet
 
 router = DefaultRouter()
-router.register('problem',QuizViewSet)
+router.register('problem', QuizViewSet)
+request_list = QuizRequestViewSet.as_view({
+    'get': 'list',
+})
 urlpatterns = [
     path('', include(router.urls)),
-    path('request',QuizRequestAPIView.as_view()),
+    path('request', request_list),
 ]
