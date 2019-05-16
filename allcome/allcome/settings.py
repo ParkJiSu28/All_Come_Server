@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'community',
     'register',
     'mocktest',
+    'django_filters',
 ]
 
 MIDDLEWARE = [
