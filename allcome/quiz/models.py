@@ -5,10 +5,10 @@ from django.db import models
 
 class QuizModel(models.Model):
     pr_id = models.IntegerField(primary_key=True, unique=True, blank=False)
-    subject = models.CharField(max_length=50, unique=True, blank=False)
+    subject = models.CharField(max_length=50, blank=False)
     image = models.URLField()
     title = models.TextField()
-    answer = models.IntegerField(blank=False)
+    answer = models.IntegerField()
     explain = models.TextField()
     choice_1 = models.CharField(max_length=50)
     choice_2 = models.CharField(max_length=50)

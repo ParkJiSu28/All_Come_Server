@@ -6,3 +6,4 @@ class QuizSerializer(ModelSerializer):
     class Meta:
         model = QuizModel
         fields = '__all__'
+
