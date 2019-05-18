@@ -11,3 +11,7 @@ class User(models.Model):
     operation_system = models.IntegerField(default='1')
     software_engineering = models.IntegerField(default='1')
 
+
+class Bookmark(models.Model):
+    pr_id = models.IntegerField(unique=True, blank=False)
+    email = models.CharField(max_length=100, unique=True, null=False)

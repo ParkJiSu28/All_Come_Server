@@ -8,3 +8,6 @@ from .models import User
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):
     list_display = ['email']
+
+class BookmarkAdmin(admin.ModelAdmin):
+    list_display = ['pr_id', 'email']

@@ -22,4 +22,5 @@ urlpatterns = [
     path('mocktest/',include('mocktest.urls')),
     path('quiz/',include('quiz.urls')),
     path('register/',include('register.urls')),
+    #path('bookmark/', include('bookmark.urls')),
 ]

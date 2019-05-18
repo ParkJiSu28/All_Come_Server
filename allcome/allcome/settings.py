@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'register',
     'mocktest',
     'django_filters',
+    #'bookmark',
 ]
 
 MIDDLEWARE = [
